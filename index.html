@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="陈宇轩的个人主页：清华大学自动化系本科生，关注具身智能、多模态感知、端侧 AI 与机器人系统。"
+    />
+    <title>陈宇轩 | Personal Website</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark">CYX</span>
+        <span>陈宇轩</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#about">简介</a>
+        <a href="#projects">项目</a>
+        <a href="#skills">能力</a>
+        <a href="#honors">荣誉</a>
+        <a href="#interests">研究兴趣</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Tsinghua University · Department of Automation</p>
+          <h2>陈宇轩</h2>
+          <p class="hero-subtitle">
+            清华大学自动化系本科生，关注具身智能、多模态 agent 感知、端侧大模型部署与机器人系统落地
+          </p>
+          <p class="hero-text">
+            连接认知模型和物理机器人，让多模态 agent 在真实环境中稳定感知、规划并执行
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="mailto:chenyx24@mails.tsinghua.edu.cn">发送邮件</a>
+            <a class="button secondary" href="#projects">查看项目</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Profile summary">
+          <figure class="portrait-frame">
+            <img src="./assets/profile.jpg" alt="陈宇轩生活照" />
+          </figure>
+          <div class="profile-card">
+            <h4>VLA training · Robot deployment · 3D perception</h4>
+          </div>
+          <dl class="quick-facts">
+            <div>
+              <dt>Education</dt>
+              <dd>清华大学自动化系 自42班</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>具身智能、多模态 Agent、端侧 AI</dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:chenyx24@mails.tsinghua.edu.cn">chenyx24@mails.tsinghua.edu.cn</a></dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>个人经历</h2>
+        </div>
+        <div class="content-grid">
+          <p class="lead">
+            具备从数据采集、模型训练、端侧部署到真实机器人测试的完整实践经验，并熟悉 ROS2、VLA
+            模型训练、3D 点云重建、端侧推理部署与硬件通信。
+          </p>
+          <div class="timeline compact">
+            <div class="timeline-item">
+              <span>2025 - 至今</span>
+              <strong>清华大学 自动化系</strong>
+              <p>本科在读，现任自42班班长</p>
+            </div>
+            <div class="timeline-item">
+              <span>2024 - 2025</span>
+              <strong>清华大学 能源与动力工程系</strong>
+              <p>曾任能源45团支书，后转入自动化系学习</p>
+            </div>
+            <div class="timeline-item">
+              <span>2021 - 2024</span>
+              <strong>合肥市第一中学</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section visual-section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Projects</p>
+          <h2>科研与项目经历</h2>
+        </div>
+        <div class="feature-image">
+          <img src="./assets/evgt-teaser.jpg" alt="EVGT 具身场景三维重建项目视觉示意" />
+          <p>EVGT 项目中的多视角、多帧场景重建示意（此处借用鲁继文老师自动驾驶课题组DVGT工作示意图）</p>
+        </div>
+        <div class="project-list">
+          <article class="project">
+            <div>
+              <p class="tag">Embodied AI · VLA</p>
+              <h3>基于千寻机器人和 PI0 模型的现实世界桌面物品抓取与放置</h3>
+            </div>
+            <p>
+              完成 VLA 模型在真实物理世界中的端到端部署，构建从数据采集、模型训练到真机验证的闭环，并自主优化 PI0
+              训练管线以提高桌面抓取与放置任务稳定性。
+            </p>
+          </article>
+          <article class="project">
+            <div>
+              <p class="tag">Edge AI · Robot System</p>
+              <h3>基于小米 CyberDog 和华为昇腾开发板的智能导览机器狗</h3>
+            </div>
+            <p>
+              结合昇腾端侧算力与 CyberDog 运动控制，实现多模态交互与智能导览功能，并负责底层运动端口与顶层智能控制逻辑的适配。
+            </p>
+          </article>
+          <article class="project">
+            <div>
+              <p class="tag">3D Perception</p>
+              <h3>具身场景 3D 点云重建项目：EVGT</h3>
+            </div>
+            <p>
+              在鲁继文老师指导下处理多视角、多帧视觉输入，探索三维视觉与第一视角动态感知在具身智能场景理解中的作用。
+            </p>
+          </article>
+          <article class="project">
+            <div>
+              <p class="tag">Reinforcement Learning</p>
+              <h3>Reward Model Project</h3>
+            </div>
+            <p>
+              在黄高老师指导下参与强化学习环境中的奖励模型构建，探索具身控制策略优化与仿真评估方法。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Capabilities</p>
+          <h2>核心能力与技术栈</h2>
+        </div>
+        <div class="skill-grid">
+          <article>
+            <h3>具身智能与大模型</h3>
+            <p>VLA 数据采集、模型训练、真机测试全链条经验，能够优化 PI0 模型训练代码与验证流程。</p>
+          </article>
+          <article>
+            <h3>多模态与 Agent</h3>
+            <p>熟悉 agent 系统架构，具备 Habitat3、PARTNR 等具身 agent 环境与数据复现经验。</p>
+          </article>
+          <article>
+            <h3>计算机视觉</h3>
+            <p>能够处理多视角、多帧视觉输入，构建 3D 点云并分析第一视角视觉与三维场景理解问题。</p>
+          </article>
+          <article>
+            <h3>端侧部署与硬件通信</h3>
+            <p>熟悉轻量级 Llama 端侧部署、华为昇腾香橙派、CANN 架构、MindSpore 与机器人硬件通信。</p>
+          </article>
+          <article>
+            <h3>机器人控制与感知</h3>
+            <p>具备 ROS2 开发、动捕系统应用、小米 CyberDog 平台自主导航与智能避障经验。</p>
+          </article>
+          <article>
+            <h3>软件开发</h3>
+            <p>掌握 Python、C#、Unity，熟悉 TightVNC、MobaXterm 等远程开发与调试工具。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="honors">
+        <div class="section-heading">
+          <p class="eyebrow">Honors</p>
+          <h2>荣誉奖项</h2>
+        </div>
+        <div class="honor-columns">
+          <ul>
+            <li>国家奖学金、清华大学校设奖学金</li>
+            <li>清华大学三好学生、清华大学优秀共青团员</li>
+            <li>清华大学第四届机器狗大赛一等奖</li>
+            <li>清华大学第二届具身智能挑战赛优胜奖</li>
+            <li>华为智能机器人开发者大赛 Robo Mind 冬令营线下营第三名</li>
+          </ul>
+          <ul>
+            <li>昇腾 AI 创新大赛清华大学专场赛第二名，队长</li>
+            <li>清华大学自动化系紫冬学生因材施教计划年会成果展特等奖</li>
+            <li>清华大学第九届芯动计划三等奖、优秀学员</li>
+            <li>拓竹杯·清华大学第八届软件设计大赛三等奖，队长</li>
+            <li>马约翰杯跆拳道男子竞技 68 kg 亚军、阳光长跑万米接力季军</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="interests">
+        <div class="section-heading">
+          <p class="eyebrow">Research Interests</p>
+          <h2>研究兴趣</h2>
+        </div>
+        <div class="interest-list">
+          <article>
+            <span>01</span>
+            <h3>具身智能与机器人控制</h3>
+            <p>
+              研究如何从人类自然交互的 RGB-D 视觉流中提取技能表征，并映射到底层运动控制，提高机器人从人类行为中自主学习和泛化复杂技能的效率。
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>多模态感知与 AI 意图理解</h3>
+            <p>
+              关注结合 3D 场景语义、多视角输入、动态视觉与人类动作轨迹的多模态理解模型，使 agent 能够预判人类意图并提供主动式辅助。
+            </p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>个性化端侧 AI 系统</h3>
+            <p>
+              探索生成式模型在边缘计算设备上的高效微调与部署，让智能体在隐私保护和低延迟前提下形成个性化辅助策略。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>欢迎交流具身智能、多模态 Agent 与机器人系统方向的问题</h2>
+        </div>
+        <a class="button primary" href="mailto:chenyx24@mails.tsinghua.edu.cn">chenyx24@mails.tsinghua.edu.cn</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> 陈宇轩. Built as a static GitHub Pages website.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
